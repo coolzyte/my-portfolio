@@ -7,6 +7,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import { projects } from "../Portfolio/projects";
 import Testimonial from "../Testimonial/Testimonial";
 import { testimonialsContent } from "../Testimonial/testimonialsContent";
+import NewsLetter from "../NewsLetter/NewsLetter";
 
 const Landing = () => {
   return (
@@ -16,6 +17,7 @@ const Landing = () => {
         <Skill />
         <Portfolio projects={projects} />
         <Testimonial testimonialsContent={testimonialsContent} />
+        <NewsLetter />
       </Layout>
     </Aux>
   );

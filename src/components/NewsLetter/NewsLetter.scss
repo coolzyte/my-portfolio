@@ -1,0 +1,35 @@
+@import "../../base/Variables.scss";
+.newsletter {
+  grid-column: center-start / center-end;
+  form {
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    max-width: 38rem;
+    margin: auto;
+    .submit {
+      background: $mine-shaft none repeat scroll 0 0;
+      border: 0 none;
+      box-shadow: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 700;
+      height: 5.2rem;
+      line-height: 5rem;
+      text-transform: uppercase;
+      transition: all 300ms ease-in 0s;
+      width: 7rem;
+    }
+  }
+  &__input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #777;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: 1rem 1.5rem;
+    width: calc(100% - 70px);
+  }
+}
