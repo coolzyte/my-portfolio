@@ -5,6 +5,8 @@ import Hero from "../Hero/Hero";
 import Skill from "../Skill/Skill";
 import Portfolio from "../Portfolio/Portfolio";
 import { projects } from "../Portfolio/projects";
+import Testimonial from "../Testimonial/Testimonial";
+import { testimonialsContent } from "../Testimonial/testimonialsContent";
 
 const Landing = () => {
   return (
@@ -13,6 +15,7 @@ const Landing = () => {
         <Hero />
         <Skill />
         <Portfolio projects={projects} />
+        <Testimonial testimonialsContent={testimonialsContent} />
       </Layout>
     </Aux>
   );

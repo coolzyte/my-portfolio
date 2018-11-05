@@ -225,3 +225,14 @@ ul {
 .m-bottom-6 {
   margin-bottom: 6rem;
 }
+
+.overlay::before {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
