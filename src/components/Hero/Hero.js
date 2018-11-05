@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import Social from "../Social/Social";
 import "./Hero.scss";
 
 const Hero = () => (
@@ -20,7 +21,9 @@ const Hero = () => (
         <Button name="Hire Me" />
       </div>
     </div>
-    {/* <Social /> */}
+    <ul className="social-menu social-menu--mod flex-item">
+      <Social />
+    </ul>
   </div>
 );
 

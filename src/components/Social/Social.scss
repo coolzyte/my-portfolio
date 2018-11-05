@@ -1,0 +1,15 @@
+@import '../../base/Variables.scss';
+@import '../../base/mixin.scss';
+.social-menu {
+  li a {
+    margin-left: 15px;
+    margin-bottom: 0;
+    color: #989898;
+    @include respond(tab-port) {
+      margin: 0 1.5rem;
+    }
+    &:hover {
+      color: $bunker;
+    }
+  }
+}
