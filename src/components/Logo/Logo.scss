@@ -1,0 +1,7 @@
+@import '../../base/mixin.scss';
+.logo {
+  width: 4%;
+  @include respond(tab-port) {
+    width: 10%;
+  }
+}

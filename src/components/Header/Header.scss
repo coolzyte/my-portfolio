@@ -1,0 +1,17 @@
+@import '../../base/mixin.scss';
+.site-header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 3rem;
+  z-index: 39;
+  &__menu-container {
+    justify-content: space-between;
+    @include respond(tab-port) {
+      padding: 0 1.6rem;
+    }
+  }
+  &__menu-content {
+    flex-wrap: nowrap;
+  }
+}

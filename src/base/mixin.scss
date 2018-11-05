@@ -1,0 +1,65 @@
+@mixin tiny() {
+  @media only screen and (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin small() {
+  @media only screen and (min-width: 575px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    // width < 600
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px / 16
+  }
+  @if $breakpoint==tab-port {
+    // width < 900
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } // 900px / 16
+  }
+  @if $breakpoint==tab-land {
+    // width < 1200
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px / 16
+  } // width < 1800 use default
+  @if $breakpoint==big-desktop {
+    // width > 1800+
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } // 1800px / 16
+  }
+}

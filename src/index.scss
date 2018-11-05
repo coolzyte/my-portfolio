@@ -1,0 +1,111 @@
+@import "./base/Variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Raleway:300,400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: $default-font;
+  color: $mine-shaft;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: $title-font;
+}
+
+p {
+  color: $scopion;
+  font-family: $default-font;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+a,
+button,
+a:before,
+img,
+input,
+textarea {
+  transition: all 300ms ease-in 0s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  outline: 0 none;
+  text-decoration: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input,
+select {
+  font-size: 1.4rem;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+button:focus,
+select:focus {
+  outline: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  & {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
