@@ -3,6 +3,8 @@ import Aux from "../../hoc/Aux";
 import Layout from "../Layout/Layout";
 import Hero from "../Hero/Hero";
 import Skill from "../Skill/Skill";
+import Portfolio from "../Portfolio/Portfolio";
+import { projects } from "../Portfolio/projects";
 
 const Landing = () => {
   return (
@@ -10,6 +12,7 @@ const Landing = () => {
       <Layout>
         <Hero />
         <Skill />
+        <Portfolio projects={projects} />
       </Layout>
     </Aux>
   );
