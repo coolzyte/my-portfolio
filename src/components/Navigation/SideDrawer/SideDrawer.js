@@ -5,7 +5,7 @@ import classes from "./SideDrawer.module.scss";
 const sideDrawer = props => {
   return (
     <div className={classes.SideDrawer}>
-      <Logo />
+      <Logo className={classes.Logo} />
       <nav>
         <NavigationItems />
       </nav>

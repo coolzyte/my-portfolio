@@ -1,7 +1,15 @@
-@import '../../base/mixin.scss';
+@import "../../base/mixin.scss";
 .logo {
-  width: 4%;
-  @include respond(tab-port) {
-    width: 10%;
+  width: 20%;
+  height: 11%;
+  margin-bottom: 3.2rem;
+  box-sizing: border-box;
+  @include medium {
+    width: 5%;
+    padding: 0.8rem;
+    height: 100%;
+  }
+  img {
+    height: 100%;
   }
 }
