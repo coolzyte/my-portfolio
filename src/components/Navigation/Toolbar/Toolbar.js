@@ -1,16 +1,16 @@
 import React from "react";
-import "./Header.scss";
-import Logo from "../Logo/Logo";
-// import NavLinks from "./NavLinks/NavLinks";
+import "./Toolbar.scss";
+import Logo from "../../Logo/Logo";
+import NavigationItems from "../NavigationItems/NavigationItems";
 // import MobileMenu from "./MobileMenu/MobileMenu";
 
-const Header = () => (
+const Toolbar = () => (
   <header className="site-header">
     <div className="wrapper">
       <div className="site-header__menu-container flex-item">
         <Logo />
         <div className="site-header__menu-content flex-item">
-          {/* <NavLinks /> */}
+          <NavigationItems />
           {/* <MobileMenu /> */}
         </div>
       </div>
@@ -18,4 +18,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default Toolbar;
