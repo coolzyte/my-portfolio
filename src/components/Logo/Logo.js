@@ -1,13 +1,14 @@
 import React from "react";
 import LogoImage from "../../assets/images/c-logo.svg";
-import "./Logo.scss";
+import "./Logo.module.scss";
+import classes from "./Logo.module.scss";
 
-const Logo = () => (
-  <div className="logo">
+const logo = props => (
+  <div className={classes.Logo}>
     <a href="/">
-      <img src={LogoImage} alt="Logo" />
+      <img src={LogoImage} alt="LogoImage" />
     </a>
   </div>
 );
 
-export default Logo;
+export default logo;

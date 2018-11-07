@@ -1,21 +1,19 @@
 import React from "react";
-import "./Toolbar.scss";
 import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
-// import MobileMenu from "./MobileMenu/MobileMenu";
+import classes from "./Toolbar.module.scss";
+import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
-const Toolbar = () => (
-  <header className="site-header">
-    <div className="wrapper">
-      <div className="site-header__menu-container flex-item">
-        <Logo />
-        <div className="site-header__menu-content flex-item">
-          <NavigationItems />
-          {/* <MobileMenu /> */}
-        </div>
-      </div>
+const toolbar = props => (
+  <header className={classes.Toolbar}>
+    <DrawerToggle clicked={props.drawerToggleClicked} />
+    <div className={classes.Logo}>
+      <Logo />
     </div>
+    <nav className={classes.DesktopOnly}>
+      <NavigationItems />
+    </nav>
   </header>
 );
 
-export default Toolbar;
+export default toolbar;

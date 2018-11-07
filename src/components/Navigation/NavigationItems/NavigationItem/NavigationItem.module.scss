@@ -1,5 +1,4 @@
 @import "../../../../base/Variables.scss";
-@import "../../../../base/mixin.scss";
 .NavigationItem {
   margin: 1rem 0;
   box-sizing: border-box;
@@ -17,7 +16,7 @@
       color: $mine-shaft;
     }
   }
-  @include medium {
+  @media (min-width: 500px) {
     margin: 0;
     display: flex;
     height: 100%;
