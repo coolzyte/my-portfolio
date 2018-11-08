@@ -1,6 +1,8 @@
 import React from "react";
 import PageTitle from "../PageTitile/PageTitle";
 import PortfolioCard from "./PortfolioCard";
+import Aux from "../../hoc/Aux/Aux";
+// import Modal from "../../components/UI/Modal/Modal";
 import "./Portfolio.scss";
 
 const Portfolio = ({ projects }) => {
@@ -29,13 +31,16 @@ const Portfolio = ({ projects }) => {
         <div className="works__row item-grid-2">
           {projects.map((user, i) => {
             return (
-              <PortfolioCard
-                key={i}
-                id={projects[i].id}
-                name={projects[i].name}
-                desc={projects[i].desc}
-                pic={projects[i].pic}
-              />
+              <Aux>
+                {/* <Modal /> */}
+                <PortfolioCard
+                  key={i}
+                  id={projects[i].id}
+                  name={projects[i].name}
+                  desc={projects[i].desc}
+                  pic={projects[i].pic}
+                />
+              </Aux>
             );
           })}
         </div>

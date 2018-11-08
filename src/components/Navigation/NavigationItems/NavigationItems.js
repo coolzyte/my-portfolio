@@ -8,10 +8,10 @@ const navigationItems = () => (
     <NavigationItem link="/" active>
       Home
     </NavigationItem>
-    <NavigationItem link="/">About</NavigationItem>
-    <NavigationItem link="/">Portfolio</NavigationItem>
-    <NavigationItem link="/">Blog</NavigationItem>
-    <NavigationItem link="/">Contact</NavigationItem>
+    <NavigationItem link="/aboutus">About</NavigationItem>
+    <NavigationItem link="/portfolio">Portfolio</NavigationItem>
+    <NavigationItem link="/blog">Blog</NavigationItem>
+    <NavigationItem link="/contactus">Contact</NavigationItem>
   </ul>
 );
 

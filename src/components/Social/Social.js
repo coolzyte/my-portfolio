@@ -1,6 +1,6 @@
 import React from "react";
 import "./Social.scss";
-import Aux from "../../hoc/Aux";
+import Aux from "../../hoc/Aux/Aux";
 
 const Social = () => {
   return (
