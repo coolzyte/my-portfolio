@@ -3,6 +3,7 @@ import Aux from "../../hoc/Aux/Aux";
 import Layout from "../../hoc/Layout/Layout";
 import Banner from "../Banner/Banner";
 import Skill from "../Skill/Skill";
+import Expert from "../Expert/Expert";
 
 const aboutPage = () => {
   return (
@@ -10,6 +11,7 @@ const aboutPage = () => {
       <Layout>
         <Banner name="About Me" />
         <Skill />
+        <Expert />
       </Layout>
     </Aux>
   );
