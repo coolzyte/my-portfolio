@@ -10,6 +10,8 @@ import B16 from "../../../assets/images/blog/b16.jpg";
 import B11 from "../../../assets/images/blog/b11.png";
 import B6 from "../../../assets/images/blog/b6.png";
 import B7 from "../../../assets/images/blog/b7.png";
+import Button from "../../../components/Button/Button";
+import "./Details.scss";
 
 const Details = () => {
   return (
@@ -26,7 +28,7 @@ const Details = () => {
             </li>
             <li>
               <i className="fa fa-user" aria-hidden="true" />
-              By <a href=""> Smarto</a>
+              By <a href="link-here"> Coolzyte</a>
             </li>
           </ul>
           <div className="m-bottom-4">
@@ -97,7 +99,7 @@ const Details = () => {
 
               <div className="comment__desc">
                 <h6>
-                  <a href="">Stuart Smith </a>
+                  <a href="link-here">Stuart Smith </a>
                 </h6>
                 <p>
                   But I must explain to you how all this mistaken idea of
@@ -112,13 +114,13 @@ const Details = () => {
               <ul className="flex-item mb-sm-15">
                 <li className="t-list">Tags:</li>
                 <li>
-                  <a href="">design,</a>
+                  <a href="link-here">design,</a>
                 </li>
                 <li>
-                  <a href="">developmen,</a>
+                  <a href="link-here">developmen,</a>
                 </li>
                 <li>
-                  <a href="">sketch</a>
+                  <a href="link-here">sketch</a>
                 </li>
               </ul>
             </div>
@@ -126,13 +128,13 @@ const Details = () => {
               <ul className="flex-item">
                 <li className="t-list">Share:</li>
                 <li>
-                  <a href="">Facebook,</a>
+                  <a href="link-here">Facebook,</a>
                 </li>
                 <li>
-                  <a href="">Twetter,</a>
+                  <a href="link-here">Twetter,</a>
                 </li>
                 <li>
-                  <a href="">Google+</a>
+                  <a href="link-here">Google+</a>
                 </li>
               </ul>
             </div>
@@ -141,13 +143,13 @@ const Details = () => {
           <div className="blog-pagination">
             <ul className="pagination flex-item">
               <li>
-                <a href="">
+                <a href="link-here">
                   <i className="fa fa-long-arrow-left" aria-hidden="true" />
                   previous
                 </a>
               </li>
               <li className="ml-auto">
-                <a href="">
+                <a href="link-here">
                   next
                   <i className="fa fa-long-arrow-right" aria-hidden="true" />
                 </a>
@@ -165,12 +167,12 @@ const Details = () => {
                 <div className="flex-item">
                   <div className="title">
                     <h6>
-                      <a href="">robert skue</a>
+                      <a href="link-here">robert skue</a>
                     </h6>
                     <span>08 Jun 2017</span>
                   </div>
                   <div className="reply">
-                    <a href="">reply</a>
+                    <a href="link-here">reply</a>
                   </div>
                 </div>
                 <p>
@@ -188,12 +190,12 @@ const Details = () => {
                 <div className="flex-item">
                   <div className="title">
                     <h6>
-                      <a href="">robert skue</a>
+                      <a href="link-here">robert skue</a>
                     </h6>
                     <span>08 Jun 2017</span>
                   </div>
                   <div className="reply">
-                    <a href="">reply</a>
+                    <a href="link-here">reply</a>
                   </div>
                 </div>
                 <p>
@@ -211,12 +213,12 @@ const Details = () => {
                 <div className="flex-item">
                   <div className="title">
                     <h6>
-                      <a href="">robert skue</a>
+                      <a href="link-here">robert skue</a>
                     </h6>
                     <span>08 Jun 2017</span>
                   </div>
                   <div className="reply">
-                    <a href="">reply</a>
+                    <a href="link-here">reply</a>
                   </div>
                 </div>
                 <p>
@@ -244,11 +246,7 @@ const Details = () => {
                 <textarea className="control" placeholder="Message" />
               </div>
               <div>
-                <input
-                  value="send now"
-                  className="btn btn--send send-now"
-                  type="submit"
-                />
+                <Button name="Send Now" />
               </div>
             </form>
           </div>
@@ -277,31 +275,31 @@ const Details = () => {
               <h3 className="sidebar-header">categories</h3>
               <ul className="list">
                 <li>
-                  <a href="">
+                  <a href="link-here">
                     creative
                     <span>(20)</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="link-here">
                     corporate
                     <span>(40)</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="link-here">
                     business
                     <span>(22)</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="link-here">
                     consultancy
                     <span>(15)</span>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="link-here">
                     technology
                     <span>(18)</span>
                   </a>
@@ -313,39 +311,39 @@ const Details = () => {
               <h3 className="sidebar-header">recent posts</h3>
               <div className="all-recent-post">
                 <div className="single-recent-post">
-                  <a href="">
+                  <a href="link-here">
                     <img src={B6} alt="blog-img" />
                   </a>
                   <div className="recent-post-desc">
                     <span>20 April, 2018</span>
                     <h6>
-                      <a href="">
+                      <a href="link-here">
                         Liusmod tempor incididunt ut labore et dolore magn
                       </a>
                     </h6>
                   </div>
                 </div>
                 <div className="single-recent-post">
-                  <a href="">
+                  <a href="link-here">
                     <img src={B7} alt="blog-img" />
                   </a>
                   <div className="recent-post-desc">
                     <span>18 April, 2018</span>
                     <h6>
-                      <a href="">
+                      <a href="link-here">
                         Modi tempora incidunt ut labore et dolore magnam{" "}
                       </a>
                     </h6>
                   </div>
                 </div>
                 <div className="single-recent-post">
-                  <a href="">
+                  <a href="link-here">
                     <img src={B8} alt="blog-img" />
                   </a>
                   <div className="recent-post-desc">
                     <span>15 April, 2018</span>
                     <h6>
-                      <a href="">
+                      <a href="link-here">
                         pursue pleasure rationallye ncounter consequences{" "}
                       </a>
                     </h6>
@@ -364,22 +362,22 @@ const Details = () => {
               <h3>Tags</h3>
               <ul className="tag-list flex-item">
                 <li>
-                  <a href="">Corporate</a>
+                  <a href="link-here">Corporate</a>
                 </li>
                 <li>
-                  <a href="">Business</a>
+                  <a href="link-here">Business</a>
                 </li>
                 <li>
-                  <a href="">Clients</a>
+                  <a href="link-here">Clients</a>
                 </li>
                 <li>
-                  <a href="">Ideas</a>
+                  <a href="link-here">Ideas</a>
                 </li>
                 <li>
-                  <a href="">Creative</a>
+                  <a href="link-here">Creative</a>
                 </li>
                 <li>
-                  <a href="">Develop</a>
+                  <a href="link-here">Develop</a>
                 </li>
               </ul>
             </div>

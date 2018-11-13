@@ -5,7 +5,9 @@ import AboutPage from "../components/AboutPage/AboutPage";
 import PortfolioPage from "../components/PortfolioPage/PortfolioPage";
 import PortfolioDetails from "../components/PortfolioPage/PortfolioDetails/PortfolioDetails";
 import BlogPage from "../components/BlogPage/BlogPage";
+import BlogDetail from "../components/BlogPage/BlogDetail/BlogDetail";
 import "./App.scss";
+import ContactPage from "../components/ContactPage/ContactPage";
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
           <Route exact path="/portfolio" component={PortfolioPage} />
           <Route exact path="/portfolio-details" component={PortfolioDetails} />
           <Route exact path="/blog" component={BlogPage} />
+          <Route exact path="/blog-details" component={BlogDetail} />
+          <Route exact path="/contact-us" component={ContactPage} />
         </div>
       </Router>
     );
