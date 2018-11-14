@@ -21,11 +21,7 @@ class Map extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent
-            lat={7.410979}
-            lng={3.951922}
-            text={"Kreyser Avrora"}
-          />
+          <AnyReactComponent lat={7.410979} lng={3.951922} text={"CoolZyte"} />
         </GoogleMapReact>
       </Aux>
     );

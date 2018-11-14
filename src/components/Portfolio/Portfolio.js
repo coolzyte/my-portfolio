@@ -2,6 +2,7 @@ import React from "react";
 import PageTitle from "../PageTitile/PageTitle";
 import PortfolioCard from "./PortfolioCard";
 import Aux from "../../hoc/Aux/Aux";
+import SearchBox from "../SearchBox/SearchBox";
 // import Modal from "../../components/UI/Modal/Modal";
 import "./Portfolio.scss";
 
@@ -16,6 +17,7 @@ const Portfolio = ({ projects }) => {
           account of the monen vai kemon asen"
         />
       </div>
+      <SearchBox />
 
       <div className="masonry">
         <div className="works__menu">
@@ -32,7 +34,6 @@ const Portfolio = ({ projects }) => {
           {projects.map((user, i) => {
             return (
               <Aux>
-                {/* <Modal /> */}
                 <PortfolioCard
                   key={i}
                   id={projects[i].id}

@@ -11,6 +11,7 @@ class ProjectPage extends Component {
       <Aux>
         <Layout>
           <Banner name="Portfolio" />
+
           <Portfolio projects={projects} />
         </Layout>
       </Aux>

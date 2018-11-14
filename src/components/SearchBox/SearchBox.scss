@@ -1,0 +1,9 @@
+.SearchBox {
+  grid-column: center-start / center-end;
+  display: flex;
+  justify-content: center;
+  &__input {
+    padding: 1rem 2rem;
+    background: lightgray;
+  }
+}
