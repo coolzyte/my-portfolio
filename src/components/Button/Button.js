@@ -4,7 +4,7 @@ import { btn } from "./Button.module.scss";
 
 const Button = ({ name }) => (
   <Aux>
-    <a href="contact-us.html" className={btn}>
+    <a href="/contact-us" className={btn}>
       {name}
     </a>
   </Aux>
