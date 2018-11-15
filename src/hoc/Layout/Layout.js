@@ -6,9 +6,16 @@ import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 import classes from "./Layout.module.scss";
 
 class Layout extends Component {
-  state = {
-    showSideDrawer: false
-  };
+  constructor() {
+    super();
+    this.state = {
+      showSideDrawer: false
+    };
+  }
+
+  onSearchChange(event) {
+    console.log(event);
+  }
 
   sideDrawerClosedHandler = () => {
     this.setState({ showSideDrawer: false });
