@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "http://coolzyte.github.io/my-portfolio",
+  "homepage": "https://coolzyte.github.io/my-portfolio",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
