@@ -13,10 +13,6 @@ class Layout extends Component {
     };
   }
 
-  onSearchChange(event) {
-    console.log(event);
-  }
-
   sideDrawerClosedHandler = () => {
     this.setState({ showSideDrawer: false });
   };
